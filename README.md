@@ -4,30 +4,33 @@
 
 # Team members: Sihao Miao, Ruian Yang, Xiaolu Qian, Jiyu Wang, David Wei
 
-devtools
+# Packages
+devtools <br />
 devtools::install_github("bocinsky/FedData")
 
 library(FedData)
-pkgTest("maps")
-pkgTest("fields")
-pkgTest("minpack.lm")
-pkgTest("Hmisc")
-pkgTest("zoo")
-pkgTest("abind")
-pkgTest("plyr")
-pkgTest("geomapdata")
-pkgTest("spatstat")
-pkgTest("mgcv")
-pkgTest("plotrix")
-pkgTest("R.oo")
+pkgTest("maps") <br />
+pkgTest("fields") <br />
+pkgTest("minpack.lm") <br />
+pkgTest("Hmisc") <br />
+pkgTest("zoo") <br />
+pkgTest("abind") <br />
+pkgTest("plyr") <br />
+pkgTest("geomapdata") <br />
+pkgTest("spatstat") <br />
+pkgTest("mgcv") <br />
+pkgTest("plotrix") <br />
+pkgTest("R.oo") <br />
 
-devtools::install_github("bocinsky/FedData")
-devtools::install_github("bocinsky/PaleoCAR")
-library(FedData)
-library(PaleoCAR)
-pkgTest("raster")
-pkgTest("png")
-pkgTest("RColorBrewer")
-pkgTest("fields")
-pkgTest("gdata")
+devtools::install_github("bocinsky/PaleoCAR") <br />
+library(FedData) <br />
+library(PaleoCAR) <br />
+pkgTest("raster") <br />
+pkgTest("png") <br />
+pkgTest("RColorBrewer") <br />
+pkgTest("fields") <br />
+pkgTest("gdata") <br />
+
+# Data
+https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861
 
