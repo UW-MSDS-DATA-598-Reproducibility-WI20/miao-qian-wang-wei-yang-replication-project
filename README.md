@@ -1,16 +1,11 @@
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
   </a>
-
-  <h3 align="center">A replication of...</h3>
-
+  <h1 align="center">A replication of...</h1>
   <p align="center">
-    Our goal of this project is to complete a professional, publication-worthy replication of a notable scientific paper.
+    The goal of this project is to complete a professional, publication-worthy replication of a notable scientific paper.
     <br />
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -32,7 +27,7 @@ David Wei
 ## Contents
 
 <!-- Data -->
-## data
+## Data
 https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861
 
 <!-- Dependencies -->
