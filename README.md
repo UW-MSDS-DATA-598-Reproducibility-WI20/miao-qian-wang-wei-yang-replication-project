@@ -1,10 +1,42 @@
-# Final Project for DATA598A Winter 2020
+<br />
+<p align="center">
+  <a href="https://github.com/github_username/repo">
+  </a>
 
-### This repo is aimed to complete a professional, publication-worthy replication of a notable scientific paper for the course DATA 598A.
+  <h3 align="center">A replication of...</h3>
 
-### Team members: Sihao Miao, Ruian Yang, Xiaolu Qian, Jiyu Wang, David Wei
+  <p align="center">
+    Our goal of this project is to complete a professional, publication-worthy replication of a notable scientific paper.
+    <br />
+</p>
 
-## Packages
+
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [Contributors](#contributors)
+* [Contents](#contents)
+* [Data](#data)
+* [Dependencies](#dependencies)
+
+<!-- ABOUT THE PROJECT -->
+## Contributors
+Sihao Miao <br />
+Ruian Yang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0789-2465) <br />
+Xiaolu Qian <br />
+Jiyu Wang <br />
+David Wei
+
+<!-- Contents -->
+## Contents
+
+<!-- Data -->
+## data
+https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861
+
+<!-- Dependencies -->
+## Dependencies
 devtools <br />
 devtools::install_github("bocinsky/FedData")
 
@@ -31,6 +63,5 @@ pkgTest("RColorBrewer") <br />
 pkgTest("fields") <br />
 pkgTest("gdata") <br />
 
-## Data
-https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861
+
 
