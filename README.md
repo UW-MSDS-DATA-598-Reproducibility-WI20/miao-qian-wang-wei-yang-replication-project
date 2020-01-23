@@ -20,7 +20,7 @@
 Sihao Miao <br />
 Ruian Yang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0789-2465) <br />
 Xiaolu Qian <br />
-Jiyu Wang <br />
+Jiyu Wang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-1283-2934)<br />
 David Wei
 
 <!-- Contents -->
