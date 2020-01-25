@@ -28,13 +28,15 @@ David Wei
 
 <!-- Data -->
 ## Data
-https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861
+The original data for this paper can be found on the National Centers for Environmental Information website:
+https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861. doi:10.7289/V5D21VHZ <br />
+
+The paper provided an easy way to download the data using the ```FedData``` _R_ package: https://github.com/ropensci/FedData.
 
 <!-- Dependencies -->
 ## Dependencies
 devtools <br />
-devtools::install_github("bocinsky/FedData")
-
+FedData v1.1.0
 library(FedData)
 pkgTest("maps") <br />
 pkgTest("fields") <br />
