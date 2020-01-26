@@ -21,7 +21,7 @@ Sihao Miao <br />
 Ruian Yang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0789-2465) <br />
 Xiaolu Qian <br />
 Jiyu Wang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-1283-2934)<br />
-David Wei
+David Wei [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-4347-5941)<br />
 
 <!-- Contents -->
 ## Contents
@@ -31,34 +31,36 @@ David Wei
 The original data for this paper can be found on the National Centers for Environmental Information website:
 https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00861. doi:10.7289/V5D21VHZ <br />
 
-The paper provided an easy way to download the data using the ```FedData``` _R_ package: https://github.com/ropensci/FedData.
+The paper provided an easy way to download the data using the [FedData](https://github.com/ropensci/FedData)
 
 <!-- Dependencies -->
 ## Dependencies
-devtools <br />
+
+```
+devtools
 FedData v1.1.0
 library(FedData)
-pkgTest("maps") <br />
-pkgTest("fields") <br />
-pkgTest("minpack.lm") <br />
-pkgTest("Hmisc") <br />
-pkgTest("zoo") <br />
-pkgTest("abind") <br />
-pkgTest("plyr") <br />
-pkgTest("geomapdata") <br />
-pkgTest("spatstat") <br />
-pkgTest("mgcv") <br />
-pkgTest("plotrix") <br />
-pkgTest("R.oo") <br />
 
-devtools::install_github("bocinsky/PaleoCAR") <br />
-library(FedData) <br />
-library(PaleoCAR) <br />
-pkgTest("raster") <br />
-pkgTest("png") <br />
-pkgTest("RColorBrewer") <br />
-pkgTest("fields") <br />
-pkgTest("gdata") <br />
+pkgTest("maps")
+pkgTest("fields")
+pkgTest("minpack.lm")
+pkgTest("Hmisc")
+pkgTest("zoo")
+pkgTest("abind")
+pkgTest("plyr")
+pkgTest("geomapdata")
+pkgTest("spatstat")
+pkgTest("mgcv")
+pkgTest("plotrix")
+pkgTest("R.oo")
 
+devtools::install_github("bocinsky/PaleoCAR")
+library(FedData)
+library(PaleoCAR)
 
-
+pkgTest("raster")
+pkgTest("png")
+pkgTest("RColorBrewer")
+pkgTest("fields")
+pkgTest("gdata")
+```
