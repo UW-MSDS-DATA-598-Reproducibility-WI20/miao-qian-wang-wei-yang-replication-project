@@ -42,6 +42,16 @@ We will be able to obtain the same simulation data by running the 001_simulation
 <!-- Dependencies -->
 ## Dependencies
 Here are the packages we need for running the 001_simulation.R file. <br />
+<table style="width:100%">
+  <tr>
+    <th>package</th>
+    <th>version</th> 
+  </tr>
+  <tr>
+    <td>doRedis</td>
+    <td>* 1.1.1</td>
+  </tr>
+  
 ─ Packages ──────────── <br />
  package     <p align="right">* version  <br />
  doRedis     * 1.1.1    <br />
