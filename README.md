@@ -99,8 +99,4 @@ Here are the packages we need for running the 001_simulation.R file. <br />
     <td>tidyverse</td>
     <td>* 1.2.1</td>
   </tr>
-  
-```
-
-
-```
+</table>
