@@ -42,13 +42,13 @@ We will be able to obtain the same simulation data by running 001_simulation.R w
 <!-- Dependencies -->
 ## Dependencies
 
-|     Team Member     | OS/Version               | 
-| :-----------------: | ------------------------ | 
-|    Sihao Miao   |     | 
-|    Ruian Yang   |  MasOS Catalina 10.15.2  | 
-|    Xiaolu Qian   |     | 
-|    Jiyu Wang     |   | 
-| David Wei         |   | 
+|     Team Member     | OS type              | R version | 
+| :-----------------: | ------------------------ | --------- |
+|    Sihao Miao   |     |   |
+|    Ruian Yang   |  MasOS Catalina 10.15.2  |  |
+|    Xiaolu Qian   |     |  |
+|    Jiyu Wang     | Windows 10 Home x64  | 3.6.2 |
+| David Wei         |   |   |
 
 Packages necessary for 001_simulation.R. <br />
 <table style="width:100%">
