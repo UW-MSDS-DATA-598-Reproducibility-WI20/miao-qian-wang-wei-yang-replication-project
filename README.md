@@ -41,22 +41,22 @@ The README.md file in this repository provides well-documented introduction to t
 We will be able to obtain the same simulation data by running the 001_simulation.R file with provided seed. The generated simulation data will be imported with other input data files provided in the 'results' folder into the 004_regression.R to get a model for the bias and create figures 4 and 5, which are our target figures of this replicating project.
 <!-- Dependencies -->
 ## Dependencies
-Here are the packages we need for running the 001_simulation.R file.
-─ Packages ───────────────────────────────────────────────────────────────────
- package     * version       
- doRedis     * 1.1.1   
- dplyr       * 0.8.0.1   
- forcats     * 0.3.0    
- foreach     * 1.4.4    
- ggplot2     * 3.1.0    
- iterators   * 1.0.10 
- parallel.   * 3.5.2
- purrr       * 0.3.0    
- readr       * 1.1.1    
- stringr     * 1.4.0  
- tibble      * 2.0.1    
- tidyr       * 0.8.2    
- tidyverse   * 1.2.1   
+Here are the packages we need for running the 001_simulation.R file. <br />
+─ Packages ─────────────────────────────────────────────────────────────────── <br />
+ package     * version        <br />
+ doRedis     * 1.1.1    <br />
+ dplyr       * 0.8.0.1    <br />
+ forcats     * 0.3.0     <br />
+ foreach     * 1.4.4     <br />
+ ggplot2     * 3.1.0     <br />
+ iterators   * 1.0.10  <br />
+ parallel.   * 3.5.2 <br />
+ purrr       * 0.3.0     <br />
+ readr       * 1.1.1     <br />
+ stringr     * 1.4.0   <br />
+ tibble      * 2.0.1    <br /> 
+ tidyr       * 0.8.2    <br /> 
+ tidyverse   * 1.2.1    <br />
 ```
 
 
