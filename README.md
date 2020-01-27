@@ -36,8 +36,9 @@ Quattrochi, John, ​et al.​ “Measuring and Correcting Bias in Indirect Esti
 The original data files for performing the individual-level simulation in this paper can be found in this [GitHub repository](https://github.com/jquattro/hiv-childmort-bias) under the data folder provided by the authors.  
  <br />
 
-The paper provided an easy way to download the data using...
+The README.md file in this repository provides well-documented introduction to the directory structure and scripts. Within the R folder, there are six R script files for conducting simulations and regressions as well as creating tables and figures of the paper. The authors also provided options to turn the parallel computing off to adapt different computing environments.
 
+We will be able to obtain the same simulation data by running the 001_simulation.R file with provided seed. The generated simulation data will be imported with other input data file provided in the result folder into the 004_regression.R to get a model for the bias and create figures 4 and 5, which are our goal of this replicating project.
 <!-- Dependencies -->
 ## Dependencies
 
