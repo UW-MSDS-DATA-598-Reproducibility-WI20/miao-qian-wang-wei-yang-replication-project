@@ -29,7 +29,7 @@ The goal of this project is to complete a professional, publication-worthy repli
 The paper claims that indirect approaches can introduce bias to under-5 mortality (U5M) estimation in populations affected by HIV/AIDS and their predictive model enables correction of the bias. It is important to us to replicate this paper because its findings can create a substantial impact on public health, especially regarding policies and programs related to the HIV epidemics. <br />
 
 Reference:.<br />
-Quattrochi, John, ​et al.​ “Measuring and Correcting Bias in Indirect Estimates of under-5 Mortality in Populations Affected by HIV/AIDS: a Simulation Study.” ​BMC Public Health​, vol. 19, no. 1, Dec. 2019, doi:10.1186/s12889-019-7780-3.
+Quattrochi, John, *et al.* “Measuring and Correcting Bias in Indirect Estimates of under-5 Mortality in Populations Affected by HIV/AIDS: a Simulation Study.” *BMC Public Health*, vol. 19, no. 1, Dec. 2019, doi:10.1186/s12889-019-7780-3.
 
 <!-- Data -->
 ## Data
