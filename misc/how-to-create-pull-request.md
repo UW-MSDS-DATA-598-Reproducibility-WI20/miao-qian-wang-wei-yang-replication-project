@@ -16,7 +16,8 @@ In Github console
 4. Merge a Pull Request after reviewing the code change
 5. Delete the remote branch (optional)
 
-In CampusWire team chat:
+In CampusWire team chat
+
 6. Ping the group of the Pull Request and seek approval before merge. (Optional but recommended for feature change or if you are working in parallel on the same file with other contributors)
 
 Sample PR: https://github.com/mshhh/DATA598A_final_project/pull/1
