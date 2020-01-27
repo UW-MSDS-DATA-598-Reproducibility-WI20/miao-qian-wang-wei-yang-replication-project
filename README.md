@@ -41,8 +41,62 @@ The README.md file in this repository provides well-documented introduction to t
 We will be able to obtain the same simulation data by running the 001_simulation.R file with provided seed. The generated simulation data will be imported with other input data files provided in the 'results' folder into the 004_regression.R to get a model for the bias and create figures 4 and 5, which are our target figures of this replicating project.
 <!-- Dependencies -->
 ## Dependencies
-
-```
-
-
-```
+Here are the packages we need for running the 001_simulation.R file. <br />
+<table style="width:100%">
+  <tr>
+    <th>package</th>
+    <th>version</th> 
+  </tr>
+  <tr>
+    <td>doRedis</td>
+    <td>* 1.1.1</td>
+  </tr>
+  <tr>
+    <td>dplyr</td>
+    <td>* 0.8.0.1</td>
+  </tr>
+  <tr>
+    <td>forcats</td>
+    <td>* 0.3.0 </td>
+  </tr>
+  <tr>
+    <td>foreach</td>
+    <td>* 1.4.4</td>
+  </tr>
+  <tr>
+    <td>ggplot2</td>
+    <td>* 3.1.0</td>
+  </tr>
+  <tr>
+    <td>iterators</td>
+    <td>* 1.0.10</td>
+  </tr>
+  <tr>
+    <td>parallel</td>
+    <td>* 3.5.2</td>
+  </tr>
+  <tr>
+    <td>purrr</td>
+    <td>* 0.3.0</td>
+  </tr>
+  <tr>
+    <td>readr</td>
+    <td>* 1.1.1</td>
+  </tr>
+  <tr>
+    <td>stringr</td>
+    <td>* 1.4.0</td>
+  </tr>
+  <tr>
+    <td>tibble</td>
+    <td>* 2.0.1</td>
+  </tr>
+  <tr>
+    <td>tidyr</td>
+    <td>* 0.8.2</td>
+  </tr>
+  <tr>
+    <td>tidyverse</td>
+    <td>* 1.2.1</td>
+  </tr>
+</table>
