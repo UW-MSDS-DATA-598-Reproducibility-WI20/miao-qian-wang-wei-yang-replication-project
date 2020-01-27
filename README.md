@@ -51,22 +51,55 @@ Here are the packages we need for running the 001_simulation.R file. <br />
     <td>doRedis</td>
     <td>* 1.1.1</td>
   </tr>
+  <tr>
+    <td>dplyr</td>
+    <td>* 0.8.0.1</td>
+  </tr>
+  <tr>
+    <td>forcats</td>
+    <td>* 0.3.0 </td>
+  </tr>
+  <tr>
+    <td>foreach</td>
+    <td>* 1.4.4</td>
+  </tr>
+  <tr>
+    <td>ggplot2</td>
+    <td>* 3.1.0</td>
+  </tr>
+  <tr>
+    <td>iterators</td>
+    <td>* 1.0.10</td>
+  </tr>
+  <tr>
+    <td>parallel</td>
+    <td>* 3.5.2</td>
+  </tr>
+  <tr>
+    <td>purrr</td>
+    <td>* 0.3.0</td>
+  </tr>
+  <tr>
+    <td>readr</td>
+    <td>* 1.1.1</td>
+  </tr>
+  <tr>
+    <td>stringr</td>
+    <td>* 1.4.0</td>
+  </tr>
+  <tr>
+    <td>tibble</td>
+    <td>* 2.0.1</td>
+  </tr>
+  <tr>
+    <td>tidyr</td>
+    <td>* 0.8.2</td>
+  </tr>
+  <tr>
+    <td>tidyverse</td>
+    <td>* 1.2.1</td>
+  </tr>
   
-─ Packages ──────────── <br />
- package     <p align="right">* version  <br />
- doRedis     * 1.1.1    <br />
- dplyr       * 0.8.0.1  <br />
- forcats     * 0.3.0    <br />
- foreach     * 1.4.4    <br />
- ggplot2     * 3.1.0    <br />
- iterators   * 1.0.10   <br />
- parallel.   * 3.5.2    <br />
- purrr       * 0.3.0    <br />
- readr       * 1.1.1    <br />
- stringr     * 1.4.0    <br />
- tibble      * 2.0.1    <br /> 
- tidyr       * 0.8.2    <br /> 
- tidyverse   * 1.2.1    <br />
 ```
 
 
