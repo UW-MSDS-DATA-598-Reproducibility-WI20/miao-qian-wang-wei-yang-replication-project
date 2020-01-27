@@ -41,7 +41,7 @@ We will be able to obtain the same simulation data by running 001_simulation.R w
 
 <!-- Dependencies -->
 ## Dependencies
-Here are the packages we need for running the 001_simulation.R file. <br />
+Packages necessary for 001_simulation.R. <br />
 <table style="width:100%">
   <tr>
     <th>package</th>
@@ -98,5 +98,41 @@ Here are the packages we need for running the 001_simulation.R file. <br />
   <tr>
     <td>tidyverse</td>
     <td>* 1.2.1</td>
+  </tr>
+</table>
+
+Packages necessary for 004_regression.R. <br />
+<table style="width:100%">
+  <tr>
+    <th>package</th>
+    <th>version</th> 
+  </tr>
+  <tr>
+    <td>bcaboot</td>
+    <td>* 0.2.1</td>
+  </tr>
+  <tr>
+    <td>data.table</td>
+    <td>* 1.11.0</td>
+  </tr>
+  <tr>
+    <td>pls</td>
+    <td>* 2.7.0</td>
+  </tr>
+  <tr>
+    <td>glmnet</td>
+    <td>* 2.0.16</td>
+  </tr>
+  <tr>
+    <td>officer</td>
+    <td>* 0.3.2</td>
+  </tr>
+  <tr>
+    <td>flextable</td>
+    <td>* 0.5.1</td>
+  </tr>
+  <tr>
+    <td>magrittr</td>
+    <td>* 1.5</td>
   </tr>
 </table>
