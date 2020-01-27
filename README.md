@@ -44,8 +44,8 @@ We will be able to obtain the same simulation data by running 001_simulation.R w
 
 |     Team Member     | OS/Version               | 
 | :-----------------: | ------------------------ | 
-|    Sihao Miao   | MasOS Catalina 10.15.2    | 
-|    Ruian Yang   |    | 
+|    Sihao Miao   |     | 
+|    Ruian Yang   |  MasOS Catalina 10.15.2  | 
 |    Xiaolu Qian   |     | 
 |    Jiyu Wang     |   | 
 | David Wei         |   | 
