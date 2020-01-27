@@ -42,19 +42,19 @@ We will be able to obtain the same simulation data by running 001_simulation.R w
 <!-- Dependencies -->
 ## Dependencies
 
-|     Team Member     | OS/Version               | 
-| :-----------------: | ------------------------ | 
-|    Sihao Miao   |     | 
-|    Ruian Yang   |  MasOS Catalina 10.15.2  | 
-|    Xiaolu Qian   |     | 
-|    Jiyu Wang     |   | 
-| David Wei         |   | 
+|     Team Member     | OS/Version               |
+| :-----------------: | ------------------------ |
+|    Sihao Miao   |     |
+|    Ruian Yang   |  MasOS Catalina 10.15.2  |
+|    Xiaolu Qian   | MacOS Mojave 10.14.6  | 
+|    Jiyu Wang     |   |
+| David Wei         |   |
 
 Packages necessary for 001_simulation.R. <br />
 <table style="width:100%">
   <tr>
     <th>package</th>
-    <th>version</th> 
+    <th>version</th>
   </tr>
   <tr>
     <td>doRedis</td>
@@ -114,7 +114,7 @@ Packages necessary for 004_regression.R. <br />
 <table style="width:100%">
   <tr>
     <th>package</th>
-    <th>version</th> 
+    <th>version</th>
   </tr>
   <tr>
     <td>bcaboot</td>
