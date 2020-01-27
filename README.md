@@ -28,17 +28,17 @@ The goal of this project is to complete a professional, publication-worthy repli
 
 The paper claims that indirect approaches can introduce bias to under-5 mortality (U5M) estimation in populations affected by HIV/AIDS and their predictive model enables correction of the bias. It is important to us to replicate this paper because its findings can create a substantial impact on public health, especially regarding policies and programs related to the HIV epidemics. <br />
 
-Reference:
+Reference:.<br />
 Quattrochi, John, ​et al.​ “Measuring and Correcting Bias in Indirect Estimates of under-5 Mortality in Populations Affected by HIV/AIDS: a Simulation Study.” ​BMC Public Health​, vol. 19, no. 1, Dec. 2019, doi:10.1186/s12889-019-7780-3.
 
 <!-- Data -->
 ## Data
-The original data files for performing the individual-level simulation in this paper can be found in this [GitHub repository](https://github.com/jquattro/hiv-childmort-bias) under the data folder provided by the authors.  
- <br />
+The original data for performing the individual-level simulation in this paper can be found in this [GitHub repository](https://github.com/jquattro/hiv-childmort-bias) under the data folder provided by the authors.  <br />
 
-The README.md file in this repository provides well-documented introduction to the directory structure and scripts. Within the 'R' folder, there are six R script files for conducting simulations and regressions as well as creating tables and figures of the paper. The authors also provided options to turn the parallel computing off to adapt to different computing environments.
+The README.md file in this repository provides well-documented introduction to the directory structure and scripts. Within the 'R' folder, there are six R script files for conducting simulations and regressions as well as creating tables and figures of the paper. The authors also provided options to turn parallel computing off to adapt to different computing environments.
 
-We will be able to obtain the same simulation data by running the 001_simulation.R file with provided seed. The generated simulation data will be imported with other input data files provided in the 'results' folder into the 004_regression.R to get a model for the bias and create figures 4 and 5, which are our target figures of this replicating project.
+We will be able to obtain the same simulation data by running 001_simulation.R with the provided seed. The generated simulation data will be imported with other input data files provided in the 'results' folder into 004_regression.R to generate the model for bias correction and create figure 4 and 5, which are our target figures to replicate.
+
 <!-- Dependencies -->
 ## Dependencies
 Here are the packages we need for running the 001_simulation.R file. <br />
