@@ -43,7 +43,7 @@ We will be able to obtain the same simulation data by running the 001_simulation
 ## Dependencies
 Here are the packages we need for running the 001_simulation.R file. <br />
 ─ Packages ──────────── <br />
- package     * version  <br />
+ package     <p align="right">* version  <br />
  doRedis     * 1.1.1    <br />
  dplyr       * 0.8.0.1  <br />
  forcats     * 0.3.0    <br />
