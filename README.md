@@ -16,7 +16,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Contributors
-Sihao Miao <br />
+Sihao Miao [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-2242-0906) <br />
 Ruian Yang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0789-2465) <br />
 Xiaolu Qian [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8747-1221) <br />
 Jiyu Wang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-1283-2934)<br />
