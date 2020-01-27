@@ -25,7 +25,9 @@ David Wei [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](ht
 <!-- Contents -->
 ## Contents
 The goal of this project is to complete a professional, publication-worthy replication of a [public health paper](https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-7780-3).<br />
+
 The paper claims that indirect approaches can introduc bias to under-5 mortality (U5M) estimation in populations affected by HIV/AIDS and their predictive model enables correction of the bias. It is important to us to replicate this paper because its foundings can create a substantial impact on public health, especially regarding policies and programs related to the HIV epidemics. <br />
+
 Reference:
 Quattrochi, John, ​et al.​ “Measuring and Correcting Bias in Indirect Estimates of under-5 Mortality in Populations Affected by HIV/AIDS: a Simulation Study.” ​BMC Public Health​, vol. 19, no. 1, Dec. 2019, doi:10.1186/s12889-019-7780-3.
 
