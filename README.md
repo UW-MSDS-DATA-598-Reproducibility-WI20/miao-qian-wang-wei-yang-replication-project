@@ -44,7 +44,7 @@ We will be able to obtain the same simulation data by running 001_simulation.R w
 
 |     Team Member     | OS type              | R version |
 | :-----------------: | ------------------------ | --------- |
-|    Sihao Miao   |     |   |
+|    Sihao Miao   |  MacOS Mojave 10.14.6   |  3.6.2 |
 |    Ruian Yang   |  MasOS Catalina 10.15.2  |  |
 |    Xiaolu Qian   | MacOS Mojave 10.14.6  | 3.4.1 |
 |    Jiyu Wang     | Windows 10 Home x64  | 3.6.2 |
