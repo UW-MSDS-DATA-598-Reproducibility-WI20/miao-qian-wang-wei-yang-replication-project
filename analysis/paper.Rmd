@@ -1,21 +1,67 @@
 ---
-title: "paper"
-author: "A group of fabulous contributors"
-date: "2/19/2020"
-output: html_document
+Title: "A replication of a simulation study on measuring and correcting bias of under-5 mortality estimation in populations affected by HIV/AIDS"
+Author:
+  - name: Name Surname
+    affiliation: 1
+  - name: Name Surname,
+    affiliation: 2, 3
+Address:
+  - code:    1
+    address: Affiliation Dept/Program/Center, Institution Name, City, State, Country
+  - code:    2
+    address: Affiliation Dept/Program/Center, Institution Name, City, State, Country
+  - code:    3
+    address: Affiliation Dept/Program/Center, Institution Name, City, State, Country
+Contact:
+  - corresponding-author@mail.com
+Editor:
+  - Name Surname
+Reviewer:
+  - Name Surname
+  - Name Surname
+Publication:
+  received:  Sep, 1, 2015
+  accepted:  Sep, 1, 2015
+  published: Sep, 1, 2015
+  volume:    "**1**"
+  issue:     "**1**"
+  date:      Sep 2015
+  number: 1
+Repository:
+  article:   
+  code:      
+  data:      
+  notebook:  
+Reproduction:
+  - "Original article (title, authors, journal, doi)"
+bibliography:
+  bibliography.bib
+output:
+  output: word_document
 ---
+
+# Introduction
+This is a R Markdown file which can be knit to produce the target figures as the goal of our replication. This __analysis__ folder also have R script files that are used by the R Markdown file.  It should not have any files that are not used by the R Markdown file. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Overview
-This is a R Markdown file which can be knit to produce the target figures as the goal of our replication. This __analysis__ folder also have R script files that are used by the R Markdown file.  It should not have any files that are not used by the R Markdown file. 
 
-## Goal
+```{r}
+x <- 1 + 1
+```
 
-## Specification
 
-## Summary
+## ...
 
-## Open Questions
+## ...
+
+## Result
+
+## Conclusion
+
+## References cited
+
+
+
