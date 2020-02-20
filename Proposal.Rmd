@@ -1,5 +1,5 @@
 ---
-title: "TaskBoard"
+title: "TaskDefinition"
 author: "A group of fabulous contributors"
 date: "2/19/2020"
 output: html_document
@@ -10,7 +10,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Overview
-This will be the starting point of generating the required files for submission. Feel free to make your edits here. It serves as a helper to handle the housekeeping of this repository and work distribution. There will be another R Markdown file (paper.rmd) aiming at generating the main delivery, target figures.
+This will be the starting point of generating the required files for submission. 
+Feel free to make your edits here. It serves as a helper to handle the housekeeping of this repository 
+and work distribution. There will be another R Markdown file (paper.rmd) aiming at generating the main delivery, target figures.
+
+Given we will be collaborating on a single Rmd, I created a separate Google Doc at [here](https://docs.google.com/document/d/1O7t3q8Aik00dzFaNpWyqoNlxUk6Z0HkJLZuFpJmjpv4/edit?usp=sharing) 
+just in case we would like to do parallel writing.
 
 ## Deliverables of Checkin 3
 https://canvas.uw.edu/courses/1354201/assignments/5218657
