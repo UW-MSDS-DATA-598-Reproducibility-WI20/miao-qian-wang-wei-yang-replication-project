@@ -1,0 +1,21 @@
+---
+title: "paper"
+author: "A group of fabulous contributors"
+date: "2/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+This is a R Markdown file which can be knit to produce the target figures as the goal of our replication. This __analysis__ folder also have R script files that are used by the R Markdown file.  It should not have any files that are not used by the R Markdown file. 
+
+## Goal
+
+## Specification
+
+## Summary
+
+## Open Questions

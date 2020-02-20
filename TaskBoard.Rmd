@@ -1,0 +1,34 @@
+---
+title: "TaskBoard"
+author: "A group of fabulous contributors"
+date: "2/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+This will be the starting point of generating the required files for submission. Feel free to make your edits here. It serves as a helper to handle the housekeeping of this repository and work distribution. There will be another R Markdown file (paper.rmd) aiming at generating the main delivery, target figures.
+
+## Deliverables of Checkin 3
+https://canvas.uw.edu/courses/1354201/assignments/5218657
+
+- a folder called __analysis__ that contains an R Markdown document called 'paper.Rmd' that can be knit to produce the target figures that you identified as the goal of your replication. This 'analysis' folder may also have R script files that are used by your R Markdown file.  It should not have any files that are not used by the R Markdown file. 
+- a folder called __data__ that contains your data files, or a README.md that tells the reader where the data can be obtained. 
+- If necessary, a folder called __notes__ containing scraps of code and other bits and pieces that you've generated along the way, but are not strictly required for your replication (i.e. not used by the R Markdown file).  We should not have to look in here or run any code in here to reproduce the results in your Rmd. 
+- Your main README.md must have two sections near the bottom with heading "Contributing" that has the text "We welcome contributions from everyone. Before you get started, please see our contributor guidelines. Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms."  Add these files by running `usethis::use_code_of_conduct()` and `usethis::use_tidy_contributing()` at the R console on your computer. Once you have made these files, edit them files to suit your situation, and add links to the appropriate words in text under the "Contributing"  heading in your READMEmd. to direct readers to those new files on your repo. 
+- A commit history that shows an even distribution of contributions from all team members, with relevant and non-cryptic commit messages. 
+
+```{r}
+usethis::use_code_of_conduct()
+```
+
+```{r}
+usethis::use_tidy_contributing()
+```
+
+
+
+
