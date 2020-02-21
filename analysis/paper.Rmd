@@ -16,7 +16,11 @@ output:
 ---
 
 # Introduction
-This is a R Markdown file which can be knit to produce the target figures as the goal of our replication. This __analysis__ folder also have R script files that are used by the R Markdown file.  It should not have any files that are not used by the R Markdown file. 
+Generalized linear model (GLM) is a widely used method in research. It is well-established with high flexibility and relatively straightforward interpretation. However, GLMs usually require making assumptions and having the underlying assumptions not hold could invalidate the whole model. 
+
+The application of GLM can be observed in many fields including public health. @quattrochi2019 introduced an GLM via penalized maximum likelihood to correct the under-5 mortality (U5M) in populations affected by HIV/AIDS. This method was developed since the U5M is commonly estimated using survey-based approaches in less developed regions and it is based on a fundamental assumption that the mother's survival is not related to her children's, which is often violated in populations affected by HIV/AIDS. Therefore, the author sought a method to correct this bias using GLM. 
+
+In our work, we present our endeavor to replicate the model building and regression analysis introduced in @quattrochi2019. In the meantime, we attempted using different parameters in both constructing the model and applying it to test how robust the original method was. We will in this paper report our method and results from the replication attempt. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
