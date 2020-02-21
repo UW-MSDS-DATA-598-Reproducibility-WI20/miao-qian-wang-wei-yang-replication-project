@@ -114,8 +114,8 @@ packageVersion("tidyverse")
 
 # Get data for initial population 22,500
 
-load("./results/regdata/p22500/regdata_all.Rdata")
-load("./results/models/inputs.RData")
+load("./results/regdata_all.Rdata")
+load("./results/inputs.RData")
 
 
 
@@ -541,7 +541,7 @@ out_table <-data.frame()
 countries <- c(figure4="Malawi",figure5="Tanzania")
 
 for(fig_name in names(countries)){
-  fig_name <- "figure5"
+  #fig_name <- "figure5"
   fig_country <- countries[fig_name]
   
   # subset each country
@@ -628,7 +628,7 @@ for(fig_name in names(countries)){
     set_colnames("PredictedAdj")
   
   
-  # Bootstrap confidente intervals for predictions
+  # Bootstrap confidence intervals for predictions
   if(is.null(boot_outs[[fig_name]])){
     # Get output vector for glmnet
     
@@ -653,7 +653,7 @@ for(fig_name in names(countries)){
     y_star <- sapply(seq_len(length(tt)), function(i) ifelse(runif(n) <= pi_hat, 1, 0))
     suff_stat <- t(y_star) %*% x
     
-    bcapar(t0=t0,tt=tt,bb=suff_stat)
+    #bcapar(t0=t0,tt=tt,bb=suff_stat)
     
     # This is the function that we will use for each bootstrap sample
     theta <- function(xy,nx,glmnet_alpha,lambda){
@@ -682,7 +682,7 @@ for(fig_name in names(countries)){
       
       set.seed(600)
       
-      bcajack(x=Xy,B=1000,func=theta,new_data,1.0,lambda)
+      bcajack(x=Xy,B=500,func=theta,new_data,1.0,lambda)
     })
   }
   
