@@ -1,43 +1,18 @@
 ---
-Title: "A replication of a simulation study on measuring and correcting bias of under-5 mortality estimation in populations affected by HIV/AIDS"
-Author:
-  - name: Name Surname
-    affiliation: 1
-  - name: Name Surname,
-    affiliation: 2, 3
-Address:
-  - code:    1
-    address: Affiliation Dept/Program/Center, Institution Name, City, State, Country
-  - code:    2
-    address: Affiliation Dept/Program/Center, Institution Name, City, State, Country
-  - code:    3
-    address: Affiliation Dept/Program/Center, Institution Name, City, State, Country
-Contact:
-  - corresponding-author@mail.com
-Editor:
-  - Name Surname
-Reviewer:
-  - Name Surname
-  - Name Surname
-Publication:
-  received:  Sep, 1, 2015
-  accepted:  Sep, 1, 2015
-  published: Sep, 1, 2015
-  volume:    "**1**"
-  issue:     "**1**"
-  date:      Sep 2015
-  number: 1
+title: "A replication of a simulation study on measuring and correcting bias of under-5 mortality estimation in populations affected by HIV/AIDS"
+author: "Sihao Miao, Ruian Yang, Xiaolu Qian, Jiyu Wang, David Wei"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 Repository:
   article:   
   code:      
   data:      
   notebook:  
-Reproduction:
-  - "Original article (title, authors, journal, doi)"
+reproduction:
+  - "Quattrochi, John, et al. “Measuring and Correcting Bias in Indirect Estimates of under-5 Mortality in Populations Affected by HIV/AIDS: a Simulation Study.” BMC Public Health, vol. 19, no. 1, Dec. 2019, doi:10.1186/s12889-019-7780-3."
 bibliography:
   bibliography.bib
 output:
-  output: word_document
+  output: bookdown::word_document2
 ---
 
 # Introduction
