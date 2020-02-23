@@ -46,7 +46,7 @@ The simulated data was first divided into training set (80%) and test set (20%).
 
 The glmnet with alpha = 1 was selected as the best-performing model based on its error measures and was used in predictions later.
 
-```{r, model-fitting-and-selection, include=FALSE}
+```{r, model-fitting-and-selection, echo=FALSE}
 
 # Get data from simulation
 load("./results/regdata_all.Rdata")
@@ -397,7 +397,11 @@ wz_model <- function(iep){
 ```
 
 ```{r, best-performing-model}
-best_model <- function(iep, fig_name, best.fitting.model, full.model.formula){
+best_model <- function(iep, fig_name){
+  
+  # Load saved best fit model
+  # Contains best.fitting.model and full.model.formula
+  load("results/best_fitting_model.RData")
   
   # Get the new predictions in matrix format
   nx <- model.matrix(full.model.formula,iep %>% mutate(corr=0))[,-1]
@@ -470,7 +474,7 @@ best_model <- function(iep, fig_name, best.fitting.model, full.model.formula){
 
 ```{r, figure-plot}
 plot_fig <- function(fig_name, fig_country){
-  # Load empirical data}
+  # Load empirical data
   fv <- fread("./data/facevalidity.csv") %>% set_colnames(c("country","agegroup", "ceb","cs","tfr2010","tfr2000","hiv1990", "hiv2000", "hiv2010","art2005","art2006","art2007","art2008","art2009","art2010","art2011","art_prev2005","art_prev2006","art_prev2007","art_prev2008","art_prev2009","prop15to19_2010","prev15to19_2010","hiv2005","hiv2006","hiv2007","hiv2008","hiv2009")) %>% mutate(cd=ceb-cs)
 
   # Load bootstrap estimates for model predictions
@@ -479,10 +483,6 @@ plot_fig <- function(fig_name, fig_country){
   }else{
     boot_outs <- list()  
   }
-
-  # Load saved best fit model
-  # Contains best.fitting.model and full.model.formula
-  load("results/best_fitting_model.RData")
   
   # indirect estimates with empirical data
   iep <- indirect_estimate(fv, fig_country)
@@ -491,7 +491,7 @@ plot_fig <- function(fig_name, fig_country){
   fiveq0WZ <- wz_model(iep)
   
   # make prediction with best-performing model
-  prediction <- best_model(iep, fig_name, best.fitting.model, full.model.formula)
+  prediction <- best_model(iep, fig_name)
   
   # Prepare data for plot
   to.plot <- bind_cols(iep, prediction,data.frame(fiveq0WZ=fiveq0WZ)) %>% 
