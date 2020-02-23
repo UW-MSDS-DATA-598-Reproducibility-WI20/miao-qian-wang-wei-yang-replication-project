@@ -132,11 +132,8 @@ file_number_format <- paste0("%0",nchar(as.character(nrow(inputs))),"d")
 # Set size of initial population
 
 initial_populations<- c(7500,15000,22500)
-#initial_populations<- c(100,150,225)
 years <- c(1906:2010)
-#years <- c(1906:1966)
 ages <- c(0:120)
-#ages <- c(0:75)
 
 # Run the simulations for each initial population
 
@@ -165,8 +162,6 @@ for(ip in initial_populations){
     results <- bigsim(inp,initialpop=ip,years,ages,hivhogan,mort_series,adultmort,worldfert,tfr_series,art_series,u5m_edit,matmort)
     
     # Save simulation results
-    #save(meta.res1,file=file.path(paste0("./results/models"),paste("models",sprintf(file_number_format,pset),".Rdata",sep="")))
-    
     save(results,file=file.path(paste0("./results/models/p",ip),paste("models",sprintf(file_number_format,pset),".Rdata",sep="")))
   }
   
