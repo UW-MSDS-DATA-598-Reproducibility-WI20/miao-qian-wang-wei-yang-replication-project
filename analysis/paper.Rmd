@@ -330,7 +330,7 @@ The figure 4 (\@ref(fig:ori-fig-4)) and 5 (\@ref(fig:ori-fig-5)) in the original
 
 With the new simulation data and best-fitting model, we re-generated both figures by using R scripts provided (\@ref(fig:rep-fig-4) and \@ref(fig:rep-fig-5)).
 
-To prepare data for plotting, we created three functions with R code provided by the authors to estimate U5M by indirect method, Ward-Zaba model and our best-performing model respectively. These three functions were then further integrated into a function called plot_fig to create our replicated figures.
+To prepare data for plotting, we created three functions with R code provided by the authors to estimate U5M by indirect method, Ward-Zaba model and our best-performing model respectively. These three functions were then further integrated into a function called plot_fig to create our replicated figures. We also included a file with necessary data for calculating the confidence interval by bootstrapping for prediction with our best-fitting model, since this step usually takes more than 40 minutes to finish.
 
 ```{r, indirect-estimates}
 
