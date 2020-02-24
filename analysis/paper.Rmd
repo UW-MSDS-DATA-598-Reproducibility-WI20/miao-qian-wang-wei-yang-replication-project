@@ -24,13 +24,14 @@ In our work, we present our endeavor to replicate the model building and regress
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-source("R/simulation_functions.R")
-source("R/indirect_estimates_functions_revised.R")
+knitr::opts_knit$set(root.dir = '../') 
 ```
 # Methods
 
 ```{r, load-packages, include=FALSE}
-install.packages('http://cran.r-project.org/src/contrib/Archive/tidyverse/tidyverse_1.2.1.tar.gz',repos=NULL, type="source")
+if(!require(tidyverse)){
+  install.packages('http://cran.r-project.org/src/contrib/Archive/tidyverse/tidyverse_1.2.1.tar.gz',repos=NULL, type="source")
+}
 packageVersion("tidyverse")
 require(tidyverse)
 # ── Attaching packages ───────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
@@ -42,16 +43,70 @@ require(tidyverse)
 # ✖ dplyr::filter() masks stats::filter()
 # ✖ dplyr::lag()    masks stats::lag()
 
-
-install.packages('https://cran.r-project.org/src/contrib/Archive/foreach/foreach_1.4.4.tar.gz',repos=NULL, type="source")
+if(!require(foreach)){
+  install.packages('https://cran.r-project.org/src/contrib/Archive/foreach/foreach_1.4.4.tar.gz',repos=NULL, type="source")
+}
 packageVersion("foreach")
 # 1.4.4
 require(foreach)
 
-install.packages('https://cran.r-project.org/src/contrib/Archive/iterators/iterators_1.0.10.tar.gz',repos=NULL, type="source")
+if(!require(iterators)){
+  install.packages('https://cran.r-project.org/src/contrib/Archive/iterators/iterators_1.0.10.tar.gz',repos=NULL, type="source")
+}
 packageVersion("iterators")
 # 1.0.10
 require(iterators)
+
+if(!require(bcaboot)){
+  install.packages("bcaboot",dependencies = TRUE,repos='http://cran.us.r-project.org')
+}
+require(bcaboot)
+packageVersion("bcaboot")
+# 0.2.1
+
+if(!require(data.table)){
+  install.packages("data.table",dependencies = TRUE,repos='http://cran.us.r-project.org')
+}
+require(data.table)
+packageVersion("data.table")
+# 1.11.8
+
+if(!require(pls)){
+  install.packages("pls",dependencies = TRUE,repos='http://cran.us.r-project.org')
+}
+require(pls)
+packageVersion("pls")
+# 2.7.0
+
+if(!require(glmnet)){
+  install.packages('https://cran.r-project.org/src/contrib/Archive/glmnet/glmnet_2.0-16.tar.gz',repos=NULL, type="source")
+}
+require(glmnet)
+packageVersion("glmnet")
+# 2.0.16
+
+if(!require(officer)){
+  install.packages("officer",dependencies = TRUE,repos='http://cran.us.r-project.org')
+}
+require(officer)
+packageVersion("officer")
+# 0.3.2
+
+if(!require(flextable)){
+  install.packages("flextable",dependencies = TRUE,repos='http://cran.us.r-project.org')
+}
+require(flextable)
+packageVersion("flextable")
+# 0.5.1
+
+
+if(!require(magrittr)){
+  install.packages("magrittr",dependencies = TRUE,repos='http://cran.us.r-project.org')
+}
+require(magrittr)
+packageVersion("magrittr")
+# 1.5
+
 ```
 
 ## Overview
@@ -61,7 +116,7 @@ The original model was implemented in R (v3.5.2) [team2013r] with web applicatio
 The goal of this large-scale simulation used in the original paper is to build a wide range of demographic histories that accounts for the variability between actual populations, to measure how biases such as the independence assumption of mother and children survival rate in a population influenced by HIV/AIDS would exist. @quattrochi2019 used stochastic simulation methods to generate a set of population with input parameters such as demographic features, mortality rate for U5M, maternal mortality rate, HIV prevalence, etc. The input simulation parameters vary over a large interval for different age groups across different populations. In each time step of one year, each woman in the population has some probabilities to give birth for those who are 15 to 49 years old, being infected with HIV, initiating ART (if HIV-positive), and dying given the simulation parameters. Through the aging process in the simulation population, children born with infected HIV mothers will have a probability of getting infected while all children will have a probability of mortality. 
 
 ## Simulation Construction 
-```{r eval = FALSE}
+```{r, include = FALSE, eval=FALSE}
 ##### DEFINE FOLDERS #######
 
 if(!dir.exists("results/figdata")){
@@ -338,7 +393,7 @@ The simulated data was first divided into training set (80%) and test set (20%).
 
 The glmnet with alpha = 1 was selected as the best-performing model based on its error measures and was used in predictions later.
 
-```{r, model-fitting-and-selection, echo=FALSE}
+```{r, model-fitting-and-selection, include=FALSE}
 
 # Get data from simulation
 load("./results/regdata_all.Rdata")
@@ -609,21 +664,21 @@ save(x,best.fitting.model,full.model.formula,file="results/best_fitting_model.RD
 
 ## Replication of Figures
 
-```{r, ori-fig-4, fig.cap="Original figure 4"}
-knitr::include_graphics("figures/figure4-ori.png")
+```{r, ori-fig-4, fig.cap="Original figure 4", echo=FALSE}
+knitr::include_graphics("figure4-ori.png")
 ```
 
-```{r, ori-fig-4, fig.cap="Original figure 4"}
-knitr::include_graphics("figures/figure5-ori.png")
+```{r, ori-fig-5, fig.cap="Original figure 5", echo=FALSE}
+knitr::include_graphics("figure5-ori.png")
 ```
 
-The figure 4 (\@ref(fig:ori-fig-4)) and 5 (\@ref(fig:ori-fig-5)) in the original article were created by applying the best-performing model as well as an independent model (REF) to empirical data from 2010 DHS for Malawi and Tanzania respectively to estimate U5M of different age groups of population. By comparing differences in U5M estimates of unadjusted data and adjusted data by two models, the authors suggested that the new model was able to correct the bias from indirect estimates. 
+The figure 4 (Fig. \@ref(fig:ori-fig-4)) and 5 (Fig. \@ref(fig:ori-fig-5)) in the original article were created by applying the best-performing model as well as an independent model (REF) to empirical data from 2010 DHS for Malawi and Tanzania respectively to estimate U5M of different age groups of population. By comparing differences in U5M estimates of unadjusted data and adjusted data by two models, the authors suggested that the new model was able to correct the bias from indirect estimates. 
 
-With the new simulation data and best-fitting model, we re-generated both figures by using R scripts provided (\@ref(fig:rep-fig-4) and \@ref(fig:rep-fig-5)).
+With the new simulation data and best-fitting model, we re-generated both figures by using R scripts provided (Fig. \@ref(fig:rep-fig-4) and  Fig. \@ref(fig:rep-fig-5)).
 
 To prepare data for plotting, we created three functions with R code provided by the authors to estimate U5M by indirect method, Ward-Zaba model and our best-performing model respectively. These three functions were then further integrated into a function called plot_fig to create our replicated figures. We also included a file with necessary data for calculating the confidence interval by bootstrapping for prediction with our best-fitting model, since this step usually takes more than 40 minutes to finish.
 
-```{r, indirect-estimates}
+```{r, indirect-estimates, include=FALSE}
 
 indirect_estimate <- function(dataset, fig_country){
   
@@ -652,8 +707,12 @@ indirect_estimate <- function(dataset, fig_country){
   
 ```
 
-```{r, Ward-Zaba-model}
-wz_model <- function(iep){
+```{r, Ward-Zaba-model, include=FALSE}
+wz_model <- function(dataset, fig_country, iep){
+  
+  # extract data of the plotting country
+  cntry <- dataset %>% filter(country==fig_country)
+  
   # Ward & Zaba (2008) coefficients
   a=c(.1134,.1202,.1107,.1720,.1749,.1504,.2552)
   b=c(-.0226,-.0438,-.0882,-.1412,-.1758,-.1849,-.3269)
@@ -687,12 +746,19 @@ wz_model <- function(iep){
 }
 ```
 
-```{r, best-performing-model}
+```{r, best-performing-model, include=FALSE}
 best_model <- function(iep, fig_name){
   
   # Load saved best fit model
   # Contains best.fitting.model and full.model.formula
   load("results/best_fitting_model.RData")
+  
+  # Load bootstrap estimates for model predictions
+  if(file.exists("results/boot_outs.RData")){
+    load("results/boot_outs.RData")
+  }else{
+    boot_outs <- list()  
+  }
   
   # Get the new predictions in matrix format
   nx <- model.matrix(full.model.formula,iep %>% mutate(corr=0))[,-1]
@@ -763,23 +829,17 @@ best_model <- function(iep, fig_name){
 }
 ```
 
-```{r, figure-plot}
+```{r, figure-plot, include=FALSE}
 plot_fig <- function(fig_name, fig_country){
   # Load empirical data
   fv <- fread("./data/facevalidity.csv") %>% set_colnames(c("country","agegroup", "ceb","cs","tfr2010","tfr2000","hiv1990", "hiv2000", "hiv2010","art2005","art2006","art2007","art2008","art2009","art2010","art2011","art_prev2005","art_prev2006","art_prev2007","art_prev2008","art_prev2009","prop15to19_2010","prev15to19_2010","hiv2005","hiv2006","hiv2007","hiv2008","hiv2009")) %>% mutate(cd=ceb-cs)
 
-  # Load bootstrap estimates for model predictions
-  if(file.exists("results/boot_outs.RData")){
-    load("results/boot_outs.RData")
-  }else{
-    boot_outs <- list()  
-  }
   
   # indirect estimates with empirical data
   iep <- indirect_estimate(fv, fig_country)
   
   # estimate from Ward & Zaba (2008) model
-  fiveq0WZ <- wz_model(iep)
+  fiveq0WZ <- wz_model(fv, fig_country, iep)
   
   # make prediction with best-performing model
   prediction <- best_model(iep, fig_name)
@@ -805,7 +865,7 @@ plot_fig <- function(fig_name, fig_country){
 }
 ```
 
-```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data"}
+```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE， fig.align='center'}
 
 # Figure 4
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Malawi:
@@ -816,7 +876,7 @@ plot_fig('figure4','Malawi')
 
 ```
 
-```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data"}
+```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE， fig.align='center'}
 
 # Figure 5
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Tanzania:
@@ -826,6 +886,7 @@ plot_fig('figure4','Malawi')
 plot_fig('figure5','Tanzania')
 
 ```
+
 
 # Result
 
