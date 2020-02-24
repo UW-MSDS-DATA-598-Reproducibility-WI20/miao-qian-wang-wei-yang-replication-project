@@ -894,7 +894,20 @@ plot_fig('figure5','Tanzania')
 
 ```
 
+We revised some parts of the regression model and found inconsistent variable names during the debugging process for the reproduction of the tables and figures to be sucessful. In the following section of the original regression code, we changed the parameter in the bootstrapping model from 1:500 to 1:5 to make it run faster. We also caught the inconsistency in the variable  “lambda.min” where the parameter should be “lambda” from the model. 
 
+```{r, eval=FALSE}
+ boot_models <- list(length=5)
+    t0 <- predict(best.fitting.model,newx = x,s="lambda.min") %>% as.vector
+    tt <- boot_models[1:5] %>%purrr::map(~predict(best.fitting.model,newx = x,s="lambda.min") %>% as.vector) %>% unlist()
+    #lambda <- best.fitting.model$lambda.min
+    lambda <- best.fitting.model$lambda
+    theta <- as.matrix(coef(best.fitting.model, s = "lambda.min"))
+    pi_hat <- predict(best.fitting.model, newx = x, s = "lambda.min", type = "response")
+    n <- length(pi_hat)
+    y_star <- sapply(seq_len(length(tt)), function(i) ifelse(runif(n) <= pi_hat, 1, 0))
+    suff_stat <- t(y_star) %*% x
+```
 # Result
 
 Our implementation of the model to estimate the bias in U5M in HIV/AIDS affected populations from @quattrochi2019 was able to replicate the process and output target tables and figures.  Consistently, indirect methods underestimate U5M in older populations, while little difference was shown in younger age groups between unadjusted and adjusted estimates. Applying our model to 2010 survey data from Malawi and Tanzania, we show that indirect methods would underestimate U5M by up to 7%. 
