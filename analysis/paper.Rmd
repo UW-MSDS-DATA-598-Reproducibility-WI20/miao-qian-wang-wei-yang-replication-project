@@ -393,8 +393,6 @@ Inputs relating to maternal mortality was calculated using MMR (maternal deaths 
 
 For other inputs including the annual probability of HIV infection[@hogan2012spline][@heuveline2003hiv], the parameters governing CD4[@hallett2008estimating], ART coverage[@databank], the annual probability of death[@worldhealthorganization_2013] and the probability of mother-to-child transmission of HIV[@stover2008spectrum], we also used the same data sources and derivation methods. 
 
-## Simulation Construction
-
 ## Model Fitting and Model Selection
 
 Newly-generated simulation data was then imported and fitted to various models to select for a best-performing model which provides least errors.  
@@ -682,7 +680,7 @@ knitr::include_graphics("figure4-ori.png")
 knitr::include_graphics("figure5-ori.png")
 ```
 
-The figure 4 (Fig. \@ref(fig:ori-fig-4)) and 5 (Fig. \@ref(fig:ori-fig-5)) in the original article were created by applying the best-performing model as well as an independent model (REF) to empirical data from 2010 DHS for Malawi and Tanzania respectively to estimate U5M of different age groups of population. By comparing differences in U5M estimates of unadjusted data and adjusted data by two models, the authors suggested that the new model was able to correct the bias from indirect estimates. 
+The figure 4 (Fig. \@ref(fig:ori-fig-4)) and 5 (Fig. \@ref(fig:ori-fig-5)) in the original article were created by applying the best-performing model as well as an independent model [@ward2008effect] to empirical data from 2010 DHS for Malawi and Tanzania respectively to estimate U5M of different age groups of population. By comparing differences in U5M estimates of unadjusted data and adjusted data by two models, the authors suggested that the new model was able to correct the bias from indirect estimates. 
 
 With the new simulation data and best-fitting model, we re-generated both figures by using R scripts provided (Fig. \@ref(fig:rep-fig-4) and  Fig. \@ref(fig:rep-fig-5)).
 
@@ -875,7 +873,7 @@ plot_fig <- function(fig_name, fig_country){
 }
 ```
 
-```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE, fig.align='center'}
+```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE}
 
 # Figure 4
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Malawi:
@@ -886,7 +884,7 @@ plot_fig('figure4','Malawi')
 
 ```
 
-```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE, fig.align='center'}
+```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE}
 
 # Figure 5
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Tanzania:
