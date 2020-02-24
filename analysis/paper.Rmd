@@ -672,11 +672,11 @@ save(x,best.fitting.model,full.model.formula,file="results/best_fitting_model.RD
 
 ## Replication of Figures
 
-```{r, ori-fig-4, fig.cap="Original figure 4", echo=FALSE}
+```{r, ori-fig-4, fig.cap="Original figure 4", echo=FALSE, out.width="10%"}
 knitr::include_graphics("figure4-ori.png")
 ```
 
-```{r, ori-fig-5, fig.cap="Original figure 5", echo=FALSE}
+```{r, ori-fig-5, fig.cap="Original figure 5", echo=FALSE, out.width="10%"}
 knitr::include_graphics("figure5-ori.png")
 ```
 
@@ -873,7 +873,7 @@ plot_fig <- function(fig_name, fig_country){
 }
 ```
 
-```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE}
+```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE, , fig.width=7, fig.height=4}
 
 # Figure 4
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Malawi:
@@ -884,7 +884,7 @@ plot_fig('figure4','Malawi')
 
 ```
 
-```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE}
+```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE, , fig.width=7, fig.height=4}
 
 # Figure 5
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Tanzania:
