@@ -124,6 +124,9 @@ $a_{d}$
 
 ## Simulation Construction 
 ```{r, include = FALSE, eval=FALSE}
+# This section of code is designed to be no executable as it takes a long time to generate simulations.
+# Instead, input data was provided as .RData files
+
 ##### DEFINE FOLDERS #######
 
 if(!dir.exists("results/figdata")){
@@ -933,6 +936,13 @@ knitr::include_graphics("table3_re.png")
 Based on our results, we believe that our effort in replicating @quattrochi2019 was successful despite some inconsistency. We argue that the differences could be due to the smaller population size we used in our simulation though further investigation would be needed to discover the exact causes.
 
 # Conclusion
+Our goal of this project is to replicate a published research project and allow readers to produce identical figures to those in the target paper. We were able to accomplish this goal by replicating the key figures in the original paper using R and publishing well-structured source code along with data source in a licensed Github repository. This paper.md R Markdown file will be used as the main entry point of our project and is fully executable. However, we intentionally set a couple code chunks with evaluation as False since simulating those data sources does not fit within the timeframe for any group who is trying to reproduce them. Instead, we created .RData file as a battery-included solution for future reproducers.
+
+We leveraged some useful Reproducibility techniques introduced in the class such as Tidyverse libraries and R Markdown syntax. The in-file executable R chunks come extremely handy during our reproducible process.
+
+There are, however, challenges throughout our explorations. The first major issue we encountered was the lengthy source data generation step which required extensive research and deep dive into source code. Given the nature of the HIV/AIDS estimation research, the data samples are required to be large enough and comprehensive which should cover across multiple geological locations and a full range of populations. Therefore, the original authors designed the raw data to be generated on-the-go rather than archived in open source. Our team underestimated the challenge of reproducing all sources by the time we picked this article. To tackle this, all team members gathered together and agreed to make tradeoffs - reducing population size during simulation. The decision was made in favor of the balance between quality of our research and a timely deliverable. We identified this as an area to improve (focus on verification of data source before replication) during our retrospective of this project. Another challenge was using R in an unfamiliar field of research. Given none of us had previous domain knowledge regarding HIV/AIDS research, we spent a lot of time understanding the terminologies while exploring the rationale behind the R code used in the original paper. We had multiple issues trying to reproduce a specific failure in R from multiple environments. For example, we still couldn’t fully understand some of the issues during “knit” failures which had been resolved by cleaning up cache in R Studio. We strongly believe that using Docker or a shared development environment could dramatically improve our developer experience where all bugs could be reproduced easily no matter where the Docker image is running.
+
+In general, we gained hands-on experience from reproducing an entire research project. After rounds of reviews and merging conflicts, we developed our own Github usage convention and code styles. We would like to carry these invaluable skills to our future Data Science journey.
 
 # References cited
 
