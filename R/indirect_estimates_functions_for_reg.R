@@ -87,7 +87,7 @@ ind_est_computations_core <- function(surv_moms,survey){
   for(i in 1:7){
     nq0[i] = (abc[lt,i+2]+ abc[lt+1,i+2]*p1520 + abc[lt+2,i+2]*p2025 +abc[lt+3,i+2]*m) * byagegroup[byagegroup$agegroup[i],"cdceb"]
   }
-  print(nq0)
+  #print(nq0)
   #Estimate time reference
   t_ref = matrix()
   for(i in 1:7){
