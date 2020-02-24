@@ -872,7 +872,7 @@ plot_fig <- function(fig_name, fig_country){
 }
 ```
 
-```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE， fig.align='center'}
+```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE, fig.align='center'}
 
 # Figure 4
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Malawi:
@@ -883,7 +883,7 @@ plot_fig('figure4','Malawi')
 
 ```
 
-```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE， fig.align='center'}
+```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE, fig.align='center'}
 
 # Figure 5
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Tanzania:
@@ -896,6 +896,28 @@ plot_fig('figure5','Tanzania')
 
 
 # Result
+
+Our implementation of the model to estimate the bias in U5M in HIV/AIDS affected populations from @quattrochi2019 was able to replicate the process and output target tables and figures.  Consistently, indirect methods underestimate U5M in older populations, while little difference was shown in younger age groups between unadjusted and adjusted estimates. Applying our model to 2010 survey data from Malawi and Tanzania, we show that indirect methods would underestimate U5M by up to 12%. 
+ 
+Table 1 (Fig. \@ref(fig:table1)) compares the prediction errors across the 13 models in the same format as in Table 4 in the original paper. Compared to the estimation errors calculated in the original paper, we had very similar results of the root mean square errors and root median square errors for all models. However, our in-sample mean relative errors were consistently greater compared to the original paper and we suspect this could be due to the reduction in population size during the simulation. Consistent with the original paper, no single model in the table showed clear advantages for all the metrics over others we selected the generalized linear regression with alpha equal to 1 as our predictive model since it showed the best performance for most of the metrics. 
+
+```{r, table1, fig.cap="Table 1", echo=FALSE}
+knitr::include_graphics("table1_re.png")
+```
+ 
+Table 2 (Fig. \@ref(fig:table2)) shows our estimation by applying the best performing model on 1,000 simulated populations and consistent with the original implementation, the mean HIV prevalence we calculated among women aged 15–49 across populations was 7% in 1990, 15% in 2000, and 11% in 2010. The highest HIV prevalence in any simulation was 40% in 2000. Our results related to ART showed the same trend as in the original paper that both prevalence and coverage increase with time, although the exact numbers varied. The mean ART coverage across our simulations was 0% in 2004 and 8% in 2010. The mean ART prevalence was < 0.1% in 2005 and 0.19% in 2009. The highest ART prevalence in any simulation was 2.3% in 2009 and this was 1.7% lower compared to the original model. The mean TFR across simulations was 4.88 in 2000 and 4.28 in 2010, also consistent with the original model.
+
+```{r, table2, fig.cap="Table 2", echo=FALSE}
+knitr::include_graphics("table2_re.png")
+```
+
+Table 3 (Fig. \@ref(fig:table3)) shows the bias in indirect estimates across age groups. According to the original paper, negative numbers indicate that unadjusted estimates were lower than adjusted estimates. The mean absolute bias was largest for estimates from women aged 35–39 and 40–44 (−0.021) and smallest for estimates from women aged 15–19 (0.000). Our results showed the same age group with a small variance in the exact numbers. The original paper also emphasized on the largest absolute bias recorded, which was −0.071 for estimates from women 35–39 in our calculation and -0.069 for them. The paper pointed out that this means that the estimated U5M was 71 deaths per 1000 live births lower when using only reports from surviving women compared to reports from surviving women and women who died from HIV/AIDS.
+ 
+```{r, table3, fig.cap="Table 3", echo=FALSE}
+knitr::include_graphics("table3_re.png")
+```
+ 
+Based on our results, we believe that our effort in replicating @quattrochi2019 was successful despite some inconsistency. We argue that the differences could be due to the smaller population size we used in our simulation though further investigation would be needed to discover the exact causes.
 
 # Conclusion
 
