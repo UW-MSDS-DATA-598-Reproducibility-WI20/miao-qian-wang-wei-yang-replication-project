@@ -116,9 +116,9 @@ The original model was implemented in R (v3.5.2) [team2013r] with web applicatio
 The goal of this large-scale simulation used in the original paper is to build a wide range of demographic histories that accounts for the variability between actual populations, to measure how biases such as the independence assumption of mother and children survival rate in a population influenced by HIV/AIDS would exist. @quattrochi2019 used stochastic simulation methods to generate a set of population with input parameters such as demographic features, mortality rate for U5M, maternal mortality rate, HIV prevalence, etc. The input simulation parameters vary over a large interval for different age groups across different populations. In each time step of one year, each woman in the population has some probabilities to give birth for those who are 15 to 49 years old, being infected with HIV, initiating ART (if HIV-positive), and dying given the simulation parameters. Through the aging process in the simulation population, children born with infected HIV mothers will have a probability of getting infected while all children will have a probability of mortality.     
 
 For the calculation of bias, we used the formula provided in the original paper. 
-$$Relative bias = \frac{IE_{survivors} - IE_{survivors,HIV deaths}}{IE_{survivors,HIV deaths}}$$
+$$\mbox{Relative bias} = \frac{IE_{survivors} - IE_{survivors,HIV deaths}}{IE_{survivors,HIV deaths}}$$
 
-$$Absolute bias = IE_{survivors} - IE_{survivors,HIV deaths}$$
+$$\mbox{Absolute bias} = IE_{survivors} - IE_{survivors,HIV deaths}$$
 According to [@quattrochi2019], $IE_{survivor}$ was the estimates of U5M based on living women in 2010, and $IE_{survivors,HIV deaths}$ was the estimates of U5M based on living women in 2010 and women died from HIV/AIDS before 2010 given the condition that they would have been 15-49 in 2010 if they had survived. 
 $a_{d}$
 
@@ -897,7 +897,7 @@ plot_fig('figure5','Tanzania')
 
 # Result
 
-Our implementation of the model to estimate the bias in U5M in HIV/AIDS affected populations from @quattrochi2019 was able to replicate the process and output target tables and figures.  Consistently, indirect methods underestimate U5M in older populations, while little difference was shown in younger age groups between unadjusted and adjusted estimates. Applying our model to 2010 survey data from Malawi and Tanzania, we show that indirect methods would underestimate U5M by up to 12%. 
+Our implementation of the model to estimate the bias in U5M in HIV/AIDS affected populations from @quattrochi2019 was able to replicate the process and output target tables and figures.  Consistently, indirect methods underestimate U5M in older populations, while little difference was shown in younger age groups between unadjusted and adjusted estimates. Applying our model to 2010 survey data from Malawi and Tanzania, we show that indirect methods would underestimate U5M by up to 7%. 
  
 Table 1 (Fig. \@ref(fig:table1)) compares the prediction errors across the 13 models in the same format as in Table 4 in the original paper. Compared to the estimation errors calculated in the original paper, we had very similar results of the root mean square errors and root median square errors for all models. However, our in-sample mean relative errors were consistently greater compared to the original paper and we suspect this could be due to the reduction in population size during the simulation. Consistent with the original paper, no single model in the table showed clear advantages for all the metrics over others we selected the generalized linear regression with alpha equal to 1 as our predictive model since it showed the best performance for most of the metrics. 
 
