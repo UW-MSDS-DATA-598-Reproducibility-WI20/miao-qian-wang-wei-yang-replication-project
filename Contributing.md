@@ -25,4 +25,4 @@ by the package.
 You can use the [styler](https://CRAN.R-project.org/package=styler) package to
 apply these styles, but please don't restyle code that has nothing to do with 
 your PR.
-* Details of how to make a Pull request is documented [here]('./misc/how-to-create-pull-request.md')
+* Details of how to make a Pull request is documented [here](./misc/how-to-create-pull-request.md)
