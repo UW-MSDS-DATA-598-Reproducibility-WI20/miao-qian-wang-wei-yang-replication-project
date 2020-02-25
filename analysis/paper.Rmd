@@ -1,7 +1,7 @@
 ---
 title: "A replication of a simulation study on measuring and correcting bias of under-5 mortality estimation in populations affected by HIV/AIDS"
 author: "Sihao Miao, Ruian Yang, Xiaolu Qian, Jiyu Wang, David Wei"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "24 February, 2020"
 Repository:
   article:   
   code:      
