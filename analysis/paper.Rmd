@@ -24,7 +24,6 @@ In our work, we present our endeavor to replicate the model building and regress
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = '../') 
 ```
 # Methods
 
@@ -407,8 +406,8 @@ knitr::include_graphics("table1_re.png")
 ```{r, model-fitting-and-selection, include=FALSE}
 
 # Get data from simulation
-load("./results/regdata_all.Rdata")
-load("./results/inputs.RData")
+load("results/regdata_all.Rdata")
+load("results/inputs.RData")
 
 # add agegroup variable
 nbd2k %<>% mutate(agegroup=rep(c(1:7),nrow(nbd2k)/7))
@@ -843,7 +842,7 @@ best_model <- function(iep, fig_name){
 ```{r, figure-plot, include=FALSE}
 plot_fig <- function(fig_name, fig_country){
   # Load empirical data
-  fv <- fread("./data/facevalidity.csv") %>% set_colnames(c("country","agegroup", "ceb","cs","tfr2010","tfr2000","hiv1990", "hiv2000", "hiv2010","art2005","art2006","art2007","art2008","art2009","art2010","art2011","art_prev2005","art_prev2006","art_prev2007","art_prev2008","art_prev2009","prop15to19_2010","prev15to19_2010","hiv2005","hiv2006","hiv2007","hiv2008","hiv2009")) %>% mutate(cd=ceb-cs)
+  fv <- fread("data/facevalidity.csv") %>% set_colnames(c("country","agegroup", "ceb","cs","tfr2010","tfr2000","hiv1990", "hiv2000", "hiv2010","art2005","art2006","art2007","art2008","art2009","art2010","art2011","art_prev2005","art_prev2006","art_prev2007","art_prev2008","art_prev2009","prop15to19_2010","prev15to19_2010","hiv2005","hiv2006","hiv2007","hiv2008","hiv2009")) %>% mutate(cd=ceb-cs)
 
   
   # indirect estimates with empirical data
