@@ -24,7 +24,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-Imports: ,
+Imports:
     bcaboot (>= 0.2-1),
     bookdown (>= 0.18),
     data.table (>= 1.12.8),
