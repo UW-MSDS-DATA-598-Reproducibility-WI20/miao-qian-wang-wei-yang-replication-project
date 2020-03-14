@@ -42,19 +42,19 @@ require(tidyverse)
 # ✖ dplyr::filter() masks stats::filter()
 # ✖ dplyr::lag()    masks stats::lag()
 
-if(!require(foreach)){
-  install.packages('https://cran.r-project.org/src/contrib/Archive/foreach/foreach_1.4.4.tar.gz',repos=NULL, type="source")
-}
-packageVersion("foreach")
-# 1.4.4
-require(foreach)
-
 if(!require(iterators)){
   install.packages('https://cran.r-project.org/src/contrib/Archive/iterators/iterators_1.0.10.tar.gz',repos=NULL, type="source")
 }
 packageVersion("iterators")
 # 1.0.10
 require(iterators)
+
+if(!require(foreach)){
+  install.packages('https://cran.r-project.org/src/contrib/Archive/foreach/foreach_1.4.4.tar.gz',repos=NULL, type="source")
+}
+packageVersion("foreach")
+# 1.4.4
+require(foreach)
 
 if(!require(bcaboot)){
   install.packages("bcaboot",dependencies = TRUE,repos='http://cran.us.r-project.org')
