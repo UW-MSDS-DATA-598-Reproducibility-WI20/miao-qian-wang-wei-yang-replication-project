@@ -49,6 +49,7 @@ Imports:
     purrr (>= 0.3.3),
     tidyverse (>= 1.3.0),
     sysfonts(>= 0.8),
+    systemfonts(>= 0.1.1),
     usethis (>= 1.5.1)
 Suggests: 
     testthat (>= 2.1.0)
