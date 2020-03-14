@@ -7,7 +7,7 @@
 </p>
 
 <!-- badges: start -->
-[![R build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/R-CMD-check/badge.svg)](https://github.com/rcctodd/-Christopherson-Garcia-Todd-Winegarden-replication-project/actions)
+[![R build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/R-CMD-check/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
 [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/master?urlpath=rstudio)
 <!-- badges: end -->
 
