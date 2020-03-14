@@ -8,7 +8,7 @@
 
 <!-- badges: start -->
 [![R build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/R-CMD-check/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
-[![Docker build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/docker-build/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
+[![Docker build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/build/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
 [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mshhh/miao-qian-wang-wei-yang-replication-project/master?urlpath=rstudio)
 <!-- badges: end -->
 
