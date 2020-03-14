@@ -4,18 +4,28 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Ruian",
            family = "Yang",
+           email = 'ruiany@uw.edu',
+           role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0789-2465"))
     person(given = "Sihao",
            family = "Miao",
+           email = 'miaosihao@gmail.com',
+           role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2242-0906"))
     person(given = "Jiyu",
            family = "Wang",
+           email = 'jiyuw@uw.edu',
+           role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1283-2934"))
     person(given = "Xiaolu",
            family = "Qian",
+           email = 'qianx6@uw.edu',
+           role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8747-1221"))
     person(given = "David",
            family = "Wei",
+           email = 'ywei1@uw.edu',
+           role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-4347-5941"))
 Description: A replication of a simulation study on measuring and correcting bias of under-5 mortality estimation in populations affected by HIV/AIDS.
 URL: https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project
