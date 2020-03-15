@@ -24,7 +24,6 @@ In our work, we present our endeavor to replicate the model building and regress
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = '../') 
 ```
 # Methods
 
@@ -43,19 +42,19 @@ require(tidyverse)
 # ✖ dplyr::filter() masks stats::filter()
 # ✖ dplyr::lag()    masks stats::lag()
 
-if(!require(foreach)){
-  install.packages('https://cran.r-project.org/src/contrib/Archive/foreach/foreach_1.4.4.tar.gz',repos=NULL, type="source")
-}
-packageVersion("foreach")
-# 1.4.4
-require(foreach)
-
 if(!require(iterators)){
   install.packages('https://cran.r-project.org/src/contrib/Archive/iterators/iterators_1.0.10.tar.gz',repos=NULL, type="source")
 }
 packageVersion("iterators")
 # 1.0.10
 require(iterators)
+
+if(!require(foreach)){
+  install.packages('https://cran.r-project.org/src/contrib/Archive/foreach/foreach_1.4.4.tar.gz',repos=NULL, type="source")
+}
+packageVersion("foreach")
+# 1.4.4
+require(foreach)
 
 if(!require(bcaboot)){
   install.packages("bcaboot",dependencies = TRUE,repos='http://cran.us.r-project.org')
@@ -407,8 +406,8 @@ knitr::include_graphics("table1_re.png")
 ```{r, model-fitting-and-selection, include=FALSE}
 
 # Get data from simulation
-load("./results/regdata_all.Rdata")
-load("./results/inputs.RData")
+load("results/regdata_all.Rdata")
+load("results/inputs.RData")
 
 # add agegroup variable
 nbd2k %<>% mutate(agegroup=rep(c(1:7),nrow(nbd2k)/7))
@@ -675,11 +674,11 @@ save(x,best.fitting.model,full.model.formula,file="results/best_fitting_model.RD
 
 ## Replication of Figures
 
-```{r, ori-fig-4, fig.cap="Original figure 4", echo=FALSE}
+```{r, ori-fig-4, fig.cap="Original figure 4", echo=FALSE, out.width="10%"}
 knitr::include_graphics("figure4-ori.png")
 ```
 
-```{r, ori-fig-5, fig.cap="Original figure 5", echo=FALSE}
+```{r, ori-fig-5, fig.cap="Original figure 5", echo=FALSE, out.width="10%"}
 knitr::include_graphics("figure5-ori.png")
 ```
 
@@ -843,7 +842,7 @@ best_model <- function(iep, fig_name){
 ```{r, figure-plot, include=FALSE}
 plot_fig <- function(fig_name, fig_country){
   # Load empirical data
-  fv <- fread("./data/facevalidity.csv") %>% set_colnames(c("country","agegroup", "ceb","cs","tfr2010","tfr2000","hiv1990", "hiv2000", "hiv2010","art2005","art2006","art2007","art2008","art2009","art2010","art2011","art_prev2005","art_prev2006","art_prev2007","art_prev2008","art_prev2009","prop15to19_2010","prev15to19_2010","hiv2005","hiv2006","hiv2007","hiv2008","hiv2009")) %>% mutate(cd=ceb-cs)
+  fv <- fread("data/facevalidity.csv") %>% set_colnames(c("country","agegroup", "ceb","cs","tfr2010","tfr2000","hiv1990", "hiv2000", "hiv2010","art2005","art2006","art2007","art2008","art2009","art2010","art2011","art_prev2005","art_prev2006","art_prev2007","art_prev2008","art_prev2009","prop15to19_2010","prev15to19_2010","hiv2005","hiv2006","hiv2007","hiv2008","hiv2009")) %>% mutate(cd=ceb-cs)
 
   
   # indirect estimates with empirical data
@@ -876,7 +875,7 @@ plot_fig <- function(fig_name, fig_country){
 }
 ```
 
-```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE}
+```{r, rep-fig-4, fig.cap="Replication of figure 4 with new simulation data", echo=FALSE, , fig.width=7, fig.height=4}
 
 # Figure 4
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Malawi:
@@ -887,7 +886,7 @@ plot_fig('figure4','Malawi')
 
 ```
 
-```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE}
+```{r, rep-fig-5, fig.cap="Replication of figure 5 with new simulation data", echo=FALSE, , fig.width=7, fig.height=4}
 
 # Figure 5
 # Under-five mortality estimates using CEB/CS from 2010 DHS for Tanzania:

@@ -6,6 +6,15 @@
 
 </p>
 
+<!-- badges: start -->
+[![R build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/R-CMD-check/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
+[![Docker build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/Docker-build/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mshhh/miao-qian-wang-wei-yang-replication-project/master?urlpath=rstudio)
+<!-- badges: end -->
+
+DOI
+https://www.doi.org/10.17605/OSF.IO/VZQ4M
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -15,6 +24,7 @@
 * [Dependencies](#dependencies)
 
 <!-- ABOUT THE PROJECT -->
+
 ## Contributors
 Sihao Miao [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-2242-0906) <br />
 Ruian Yang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0789-2465) <br />
@@ -151,3 +161,4 @@ Packages necessary for 004_regression.R. <br />
 We welcome contributions from everyone. Before you get started, please see our contributor guidelines. Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
 
 - See the [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md)
+- See the [Contribution Guide](./Contributing.md)
