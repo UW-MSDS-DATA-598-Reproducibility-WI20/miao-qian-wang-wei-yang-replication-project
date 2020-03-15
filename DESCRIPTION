@@ -5,16 +5,16 @@ Authors@R:
     c(person(given = "Ruian",
            family = "Yang",
            role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-0789-2465"))
+           comment = c(ORCID = "0000-0002-0789-2465")),
     person(given = "Sihao",
            family = "Miao",
-           comment = c(ORCID = "0000-0003-2242-0906"))
+           comment = c(ORCID = "0000-0003-2242-0906")),
     person(given = "Jiyu",
            family = "Wang",
-           comment = c(ORCID = "0000-0002-1283-2934"))
+           comment = c(ORCID = "0000-0002-1283-2934")),
     person(given = "Xiaolu",
            family = "Qian",
-           comment = c(ORCID = "0000-0002-8747-1221"))
+           comment = c(ORCID = "0000-0002-8747-1221")),
     person(given = "David",
            family = "Wei",
            comment = c(ORCID = "0000-0002-4347-5941")))
