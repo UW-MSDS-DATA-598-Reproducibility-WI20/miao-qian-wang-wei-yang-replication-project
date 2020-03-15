@@ -35,6 +35,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Imports:
-    flextable (>= 0.5.8)
+    flextable (>= 0.5.1)
 Suggests: 
     testthat (>= 2.1.0)
