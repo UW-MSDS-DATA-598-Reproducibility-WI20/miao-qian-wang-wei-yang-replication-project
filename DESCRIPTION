@@ -1,32 +1,32 @@
-Package: compendium
+Package: compendium 
 Title: Replication project
 Version: 0.0.0.9000
 Authors@R: 
-    c(person(given = "Ruian",
+    person(given = "Ruian",
            family = "Yang",
+           email = 'ruiany@uw.edu',
            role = c("aut", "cre"),
-           email = "benmarwick@gmail.com",
-           comment = c(ORCID = "0000-0002-0789-2465")),
+           comment = c(ORCID = "0000-0002-0789-2465"))
     person(given = "Sihao",
            family = "Miao",
-           email = "benmarwick@gmail.com",
-           role=c("aut"),
-           comment = c(ORCID = "0000-0003-2242-0906")),
+           email = 'miaosihao@gmail.com',
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2242-0906"))
     person(given = "Jiyu",
            family = "Wang",
-           role=c("aut"),
-           email = "benmarwick@gmail.com",
-           comment = c(ORCID = "0000-0002-1283-2934")),
+           email = 'jiyuw@uw.edu',
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1283-2934"))
     person(given = "Xiaolu",
            family = "Qian",
-           role=c("aut"),
-           email = "benmarwick@gmail.com",
-           comment = c(ORCID = "0000-0002-8747-1221")),
+           email = 'qianx6@uw.edu',
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8747-1221"))
     person(given = "David",
            family = "Wei",
-           role=c("aut"),
-           email = "benmarwick@gmail.com",
-           comment = c(ORCID = "0000-0002-4347-5941")))
+           email = 'ywei1@uw.edu',
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4347-5941"))
 Description: A replication of a simulation study on measuring and correcting bias of under-5 mortality estimation in populations affected by HIV/AIDS.
 URL: https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project
 Depends: R (>= 3.5.2)

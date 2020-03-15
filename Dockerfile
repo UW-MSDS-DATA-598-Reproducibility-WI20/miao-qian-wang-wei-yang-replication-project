@@ -1,6 +1,6 @@
 FROM rocker/verse:3.6.2
 
-MAINTAINER awesome team <@uw.edu>
+MAINTAINER ywei1@uw.edu 
 
 COPY . /compendium
 
