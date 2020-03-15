@@ -12,6 +12,9 @@
 [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mshhh/miao-qian-wang-wei-yang-replication-project/master?urlpath=rstudio)
 <!-- badges: end -->
 
+DOI
+https://www.doi.org/10.17605/OSF.IO/VZQ4M
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -21,6 +24,7 @@
 * [Dependencies](#dependencies)
 
 <!-- ABOUT THE PROJECT -->
+
 ## Contributors
 Sihao Miao [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-2242-0906) <br />
 Ruian Yang [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0789-2465) <br />
