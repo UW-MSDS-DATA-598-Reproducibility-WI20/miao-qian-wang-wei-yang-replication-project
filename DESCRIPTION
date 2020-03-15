@@ -35,8 +35,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Imports:
-    bcaboot (>= 0.2-1),
-    data.table (>= 1.12.8),
     dplyr (>= 0.8.4),
     flextable (>= 0.5.8)
 Suggests: 
