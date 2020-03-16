@@ -10,10 +10,9 @@
 [![R build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/R-CMD-check/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
 [![Docker build status](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/workflows/Docker-build/badge.svg)](https://github.com/mshhh/miao-qian-wang-wei-yang-replication-project/actions)
 [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mshhh/miao-qian-wang-wei-yang-replication-project/master?urlpath=rstudio)
-<!-- badges: end -->
+[![DOI](https://img.shields.io/badge/OSF-DOI%3A%2010.17605%2FOSF.IO%2FVZQ4M-brightgreen)](https://doi.org/10.17605/OSF.IO/VZQ4M)
 
-DOI
-https://www.doi.org/10.17605/OSF.IO/VZQ4M
+<!-- badges: end -->
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
